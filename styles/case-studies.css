@@ -1,0 +1,79 @@
+.section {
+  width: 100%;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0a0719 0%, #34227d 50%, #2d1b69 100%);
+  z-index: 0;
+}
+
+.section-inner {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.horizontal-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.slider-track {
+  display: flex;
+  animation: slideHorizontal 30s linear infinite;
+  width: fit-content;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+.case-study-card {
+  flex: 0 0 300px;
+  margin: 0 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-study-image {
+  border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
+}
+
+.case-study-content {
+  padding: 1.5rem;
+}
+
+@keyframes slideHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
