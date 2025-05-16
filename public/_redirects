@@ -1,0 +1,8 @@
+# Redirect domain aliases to primary domain
+https://www.yourdomain.com/* https://yourdomain.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://your-site-name.pages.dev/* https://yourdomain.com/:splat 301!
+
+# Handle trailing slashes
+/index.html / 301!
