@@ -1,8 +1,8 @@
-# Redirect domain aliases to primary domain
-https://www.yourdomain.com/* https://yourdomain.com/:splat 301!
+# Redirects file for Cloudflare Pages
+# Place this in your "public" directory
 
-# Optional: Redirect default Netlify subdomain to primary domain
-https://your-site-name.pages.dev/* https://yourdomain.com/:splat 301!
+# Redirect root domain to www subdomain (if needed)
+# https://yourdomain.com/* https://www.yourdomain.com/:splat 301!
 
-# Handle trailing slashes
-/index.html / 301!
+# SPA fallback - handle client-side routing
+/* /index.html 200
