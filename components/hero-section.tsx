@@ -48,18 +48,20 @@ export default function HeroSection() {
         >
           {mounted && (
             <div className="wistia-container">
-              {/* Using the direct iframe embed which should be immediately playable */}
-              <iframe
-                src="https://fast.wistia.net/embed/iframe/zuvms7wuaw?videoFoam=true"
-                title="Zillion Systems Video"
-                allow="autoplay; fullscreen"
-                allowTransparency={true}
-                frameBorder="0"
-                scrolling="no"
-                className="wistia_embed"
-                name="wistia_embed"
-                width="100%"
-                height="100%"
+              {/* Wistia player implementation */}
+              <script src="https://fast.wistia.com/player.js" async></script>
+              <script src="https://fast.wistia.com/embed/58ajutp3x5.js" async type="module"></script>
+              <style>
+                {`wistia-player[media-id='58ajutp3x5']:not(:defined) { 
+                  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/58ajutp3x5/swatch'); 
+                  display: block; 
+                  filter: blur(5px); 
+                  padding-top:56.25%; 
+                }`}
+              </style>
+              <wistia-player
+                media-id="58ajutp3x5"
+                aspect="1.7777777777777777"
                 style={{
                   position: "absolute",
                   top: 0,
@@ -67,7 +69,7 @@ export default function HeroSection() {
                   width: "100%",
                   height: "100%",
                 }}
-              ></iframe>
+              ></wistia-player>
             </div>
           )}
         </motion.div>
