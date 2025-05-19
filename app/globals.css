@@ -353,6 +353,21 @@ p {
   border: none;
 }
 
+.wistia_responsive_padding {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.wistia_embed {
+  border-radius: 0.75rem;
+}
+
+/* Ensure the iframe has proper styling */
+iframe.wistia_embed {
+  border: none;
+}
+
 /* YouTube video container */
 .youtube-container {
   position: relative;

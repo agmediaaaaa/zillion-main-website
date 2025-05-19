@@ -11,12 +11,6 @@ export default function HeroSection() {
   // Ensure client-side only rendering for the Wistia video
   useEffect(() => {
     setMounted(true)
-
-    // Clean up function to remove any scripts when component unmounts
-    return () => {
-      const scripts = document.querySelectorAll('script[data-wistia="true"]')
-      scripts.forEach((script) => script.remove())
-    }
   }, [])
 
   return (
@@ -47,24 +41,6 @@ export default function HeroSection() {
           </motion.h1>
         </motion.div>
 
-        {mounted && (
-          <>
-            <Script
-              id="wistia-player-js"
-              src="https://fast.wistia.com/player.js"
-              strategy="afterInteractive"
-              data-wistia="true"
-            />
-            <Script
-              id="wistia-embed-js"
-              src="https://fast.wistia.com/embed/58ajutp3x5.js"
-              strategy="afterInteractive"
-              type="module"
-              data-wistia="true"
-            />
-          </>
-        )}
-
         <motion.div
           className="max-w-3xl mx-auto relative rounded-xl overflow-hidden mb-6 px-4 md:px-0"
           initial={{ opacity: 0 }}
@@ -72,17 +48,29 @@ export default function HeroSection() {
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           {mounted && (
-            <div className="wistia-container">
-              <style jsx>{`
-                wistia-player[media-id='58ajutp3x5']:not(:defined) { 
-                  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/58ajutp3x5/swatch'); 
-                  display: block; 
-                  filter: blur(5px); 
-                  padding-top: 56.25%; 
-                }
-              `}</style>
-              <wistia-player media-id="58ajutp3x5" aspect="1.7777777777777777"></wistia-player>
-            </div>
+            <>
+              {/* Standard Wistia iframe embed - works with static exports */}
+              <div className="wistia_responsive_padding" style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <div
+                  className="wistia_responsive_wrapper"
+                  style={{ height: "100%", left: 0, position: "absolute", top: 0, width: "100%" }}
+                >
+                  <iframe
+                    src="https://fast.wistia.net/embed/iframe/58ajutp3x5"
+                    allowTransparency={true}
+                    frameBorder="0"
+                    scrolling="no"
+                    className="wistia_embed"
+                    name="wistia_embed"
+                    allowFullScreen
+                    width="100%"
+                    height="100%"
+                    style={{ borderRadius: "0.75rem" }}
+                  ></iframe>
+                </div>
+              </div>
+              <Script src="https://fast.wistia.net/assets/external/E-v1.js" strategy="afterInteractive" />
+            </>
           )}
         </motion.div>
 

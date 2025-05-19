@@ -22,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Load Wistia scripts directly */}
-        <Script src="https://fast.wistia.net/assets/external/E-v1.js" strategy="beforeInteractive" />
+        {/* Preload Wistia script for better performance */}
+        <link rel="preconnect" href="https://fast.wistia.net" />
+        <link rel="preconnect" href="https://fast.wistia.com" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
@@ -32,6 +33,8 @@ export default function RootLayout({
             {children}
           </div>
         </ThemeProvider>
+        {/* Load Wistia script at document level */}
+        <Script src="https://fast.wistia.net/assets/external/E-v1.js" strategy="afterInteractive" />
       </body>
     </html>
   )
