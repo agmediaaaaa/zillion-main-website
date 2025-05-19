@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <div className="relative h-12 w-64">
+            <div className="relative h-10 w-48 md:h-12 md:w-64">
               <Image src="/images/logo-no-background.png" alt="Zillionsystems" fill className="object-contain" />
             </div>
           </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
             <button onClick={toggleResourcesModal} className="nav-link">
               Free Resources
             </button>
-            <Link href="https://calendly.com/swapnil-panigrahi/discovery-call" target="_blank">
+            <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
               <Button className="primary-button">Book a Call</Button>
             </Link>
           </nav>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 Free Resources
               </button>
               <Link
-                href="https://calendly.com/swapnil-panigrahi/discovery-call"
+                href="https://app.lemcal.com/@zillion-systems/growth-partner"
                 target="_blank"
                 onClick={() => setIsOpen(false)}
               >

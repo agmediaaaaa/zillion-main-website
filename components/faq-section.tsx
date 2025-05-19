@@ -55,13 +55,13 @@ export default function FaqSection() {
           <h2 className="text-gray-900">
             Frequently Asked <span className="text-[#5538CF]">Questions</span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto px-4">
             Get answers to common questions about our AI-powered cold email system for staffing firms
           </p>
         </motion.div>
 
         <motion.div
-          className="max-w-3xl mx-auto"
+          className="max-w-3xl mx-auto px-4"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -70,7 +70,7 @@ export default function FaqSection() {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
                 <AccordionTrigger className="text-left py-4 hover:no-underline text-gray-900">
-                  <span className="text-lg font-medium">{faq.question}</span>
+                  <span className="text-base md:text-lg font-medium">{faq.question}</span>
                 </AccordionTrigger>
                 <AccordionContent className="py-4 text-gray-700">{faq.answer}</AccordionContent>
               </AccordionItem>
@@ -84,7 +84,7 @@ export default function FaqSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Link href="https://calendly.com/swapnil-panigrahi/discovery-call" target="_blank">
+          <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
             <Button className="primary-button">
               BOOK AN INTRO CALL
               <span className="ml-2">📅</span>

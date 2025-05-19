@@ -18,10 +18,10 @@ export default function TestimonialsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-[#5538CF]">THIS IS WHAT OUR CLIENTS HAVE TO SAY ABOUT THEIR EXPERIENCE</h2>
+          <h2 className="text-[#5538CF] px-4">THIS IS WHAT OUR CLIENTS HAVE TO SAY ABOUT THEIR EXPERIENCE</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16 px-4">
           <motion.div
             className="card"
             initial={{ opacity: 0, y: 30 }}
@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Link href="https://calendly.com/swapnil-panigrahi/discovery-call" target="_blank">
+          <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
             <Button className="primary-button">
               BOOK AN INTRO CALL
               <span className="ml-2">📅</span>

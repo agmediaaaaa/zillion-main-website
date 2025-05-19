@@ -14,7 +14,7 @@ export default function OfferSection() {
     <section className="section light-section" id="offer" ref={ref}>
       <div className="section-inner">
         <motion.div
-          className="max-w-3xl mx-auto text-center space-y-8"
+          className="max-w-3xl mx-auto text-center space-y-8 px-4"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
@@ -66,7 +66,7 @@ export default function OfferSection() {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
-            <Link href="https://calendly.com/swapnil-panigrahi/discovery-call" target="_blank">
+            <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
               <Button className="primary-button">
                 BOOK A CALL
                 <span className="ml-2">📅</span>

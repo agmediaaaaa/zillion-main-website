@@ -29,9 +29,9 @@ export default function FormulaSection() {
     {
       number: "03",
       title: "Onboarding",
-      description: "We will onboard you and setup the infrastructure within 14-days.",
+      description: "We will onboard you and setup the infrastructure within 7-days.",
       icon: <Rocket className="w-6 h-6 text-[#5538CF]" />,
-      stats: "14-day implementation",
+      stats: "7-day implementation",
     },
     {
       number: "04",
@@ -59,12 +59,12 @@ export default function FormulaSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-[#5538CF]">THE FORMULA</h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto mt-4">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto mt-4 px-4">
             Our proven process to help staffing firms generate consistent, high-quality leads
           </p>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -88,7 +88,7 @@ export default function FormulaSection() {
                   <div className="w-12 h-12 rounded-full bg-[#5538CF]/10 flex items-center justify-center mr-4">
                     {step.icon}
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900">{step.title}</h3>
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">{step.title}</h3>
                 </div>
                 <p className="text-gray-700 mb-4">{step.description}</p>
                 <div className="bg-gray-100 p-3 rounded-lg text-sm font-medium text-gray-700">{step.stats}</div>

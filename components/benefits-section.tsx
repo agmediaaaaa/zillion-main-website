@@ -33,7 +33,7 @@ export default function BenefitsSection() {
           <h2 className="text-[#5538CF]">YOU'D GET</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 px-4">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
@@ -47,7 +47,7 @@ export default function BenefitsSection() {
                   <Check className="w-4 h-4 text-white" />
                 </div>
               </div>
-              <p className="text-xl text-gray-700">{benefit}</p>
+              <p className="text-lg md:text-xl text-gray-700">{benefit}</p>
             </motion.div>
           ))}
         </div>
@@ -58,7 +58,7 @@ export default function BenefitsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <Link href="https://calendly.com/swapnil-panigrahi/discovery-call" target="_blank" id="book-call">
+          <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank" id="book-call">
             <Button className="primary-button">
               BOOK AN INTRO CALL
               <span className="ml-2">📅</span>

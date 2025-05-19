@@ -15,12 +15,12 @@ export default function PipelineSection() {
       <div className="section-inner">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
-            className="space-y-6"
+            className="space-y-6 px-4 md:px-0"
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-gray-900">
+            <h2 className="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-bold">
               Our system can fill ANY recruitment companies pipeline <span className="text-[#5538CF]">in 30 days</span>{" "}
               or less
             </h2>
@@ -28,7 +28,7 @@ export default function PipelineSection() {
               Reach out to companies that have urgent hiring needs and are open to external recruiting support
             </p>
             <div className="pt-6">
-              <Link href="https://calendly.com/swapnil-panigrahi/discovery-call" target="_blank">
+              <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
                 <Button className="primary-button">
                   LEARN MORE
                   <span className="ml-2">→</span>
@@ -37,7 +37,7 @@ export default function PipelineSection() {
             </div>
           </motion.div>
           <motion.div
-            className="card"
+            className="card mx-4 md:mx-0"
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -45,7 +45,7 @@ export default function PipelineSection() {
             <div className="text-lg font-medium mb-4 text-gray-900">
               Half a million dollar worth of opportunities in one Quarter
             </div>
-            <div className="relative h-[400px] w-full mb-4 rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[400px] w-full mb-4 rounded-lg overflow-hidden">
               <Image
                 src="/images/campaign-stats.png"
                 alt="Campaign Results Dashboard"
