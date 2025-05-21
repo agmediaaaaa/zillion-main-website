@@ -11,6 +11,12 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Zillionsystems - AI Cold Email System for Staffing Firms",
   description: "Get 3-5 job orders a month using AI based cold emails",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
     generator: 'v0.dev'
 }
 

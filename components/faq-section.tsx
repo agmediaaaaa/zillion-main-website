@@ -19,7 +19,7 @@ export default function FaqSection() {
     {
       question: "How long until I see results?",
       answer:
-        "Most clients start seeing initial responses within the first week of campaign launch. Typically, you can expect to see 3-5 qualified job orders within the first 30 days, with consistent growth as we optimize your campaigns.",
+        "You can start seeing initial responses from the first week of campaign launch. It typically takes about 15-20 days to see the real effect as we optimize your campaigns. By the 30-day mark, your system should be up and running perfectly (given we don't face external issues which we really cannot solve).",
     },
     {
       question: "Do I need to provide my own email list?",
