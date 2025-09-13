@@ -4,6 +4,8 @@ import "./globals.css"
 import { Inter } from "next/font/google"
 import Navbar from "@/components/navbar"
 import Script from "next/script"
+import { Analytics } from "@vercel/analytics/next"
+import { Suspense } from "react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -29,15 +31,18 @@ export default function RootLayout({
       <head>
         {/* Preload Wistia script for better performance */}
         <link rel="preconnect" href="https://fast.wistia.net" />
-        <link rel="preconnect" href="https://fast.wistia.com" />
+        <link rel="preconnect" href="https://fast.wistia.net" />
       </head>
       <body className={inter.className}>
-        <div className="main-background">
-          <Navbar />
-          {children}
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <div className="main-background">
+            <Navbar />
+            {children}
+          </div>
+        </Suspense>
         {/* Load Wistia script at document level */}
         <Script src="https://fast.wistia.net/assets/external/E-v1.js" strategy="afterInteractive" />
+        <Analytics />
       </body>
     </html>
   )
