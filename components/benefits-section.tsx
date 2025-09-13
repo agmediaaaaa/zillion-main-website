@@ -72,7 +72,11 @@ export default function BenefitsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank" id="book-call">
+          <Link
+            href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems"
+            target="_blank"
+            id="book-call"
+          >
             <Button className="primary-button">
               BOOK AN INTRO CALL
               <span className="ml-2">📅</span>

@@ -80,7 +80,7 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
+          <Link href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems" target="_blank">
             <Button className="primary-button">
               LEARN MORE
               <span className="ml-2">→</span>

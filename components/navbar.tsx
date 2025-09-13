@@ -63,7 +63,7 @@ export default function Navbar() {
             <button onClick={toggleResourcesModal} className="nav-link">
               Free Resources
             </button>
-            <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
+            <Link href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems" target="_blank">
               <Button className="primary-button">Book a Call</Button>
             </Link>
           </nav>
@@ -100,7 +100,7 @@ export default function Navbar() {
                 Free Resources
               </button>
               <Link
-                href="https://app.lemcal.com/@zillion-systems/growth-partner"
+                href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems"
                 target="_blank"
                 onClick={() => setIsOpen(false)}
               >

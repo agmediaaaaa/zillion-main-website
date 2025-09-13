@@ -66,7 +66,7 @@ export default function OfferSection() {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
-            <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
+            <Link href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems" target="_blank">
               <Button className="primary-button">
                 BOOK A CALL
                 <span className="ml-2">📅</span>

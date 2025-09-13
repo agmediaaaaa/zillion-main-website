@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { X, FileText, Video, Download, BookOpen, PresentationIcon, BarChart } from "lucide-react"
+import { X, FileText, Video, Download, BookOpen, BarChart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -22,6 +22,13 @@ export default function ResourcesModal() {
 
   const resources = [
     {
+      title: "Cold Email ROI Calculator",
+      description: "Calculate the potential return on your email campaigns",
+      icon: <BarChart className="w-10 h-10" />,
+      type: "Calculator",
+      link: "https://zs-roi-calculator.lovable.app/",
+    },
+    {
       title: "Cold Email Templates for Staffing Firms",
       description: "10 proven templates that get responses from hiring managers",
       icon: <FileText className="w-10 h-10" />,
@@ -40,22 +47,10 @@ export default function ResourcesModal() {
       type: "Report",
     },
     {
-      title: "Email Sequence Builder",
-      description: "Interactive tool to build your own follow-up sequences",
-      icon: <PresentationIcon className="w-10 h-10" />,
-      type: "Interactive Tool",
-    },
-    {
       title: "The Ultimate Guide to Staffing Sales",
       description: "Comprehensive guide to scaling your staffing firm",
       icon: <BookOpen className="w-10 h-10" />,
       type: "eBook",
-    },
-    {
-      title: "Cold Email ROI Calculator",
-      description: "Calculate the potential return on your email campaigns",
-      icon: <BarChart className="w-10 h-10" />,
-      type: "Calculator",
     },
   ]
 
@@ -111,9 +106,16 @@ export default function ResourcesModal() {
                     <p className="text-gray-700 mb-4">{resource.description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-500">{resource.type}</span>
-                      <Button className="primary-button flex items-center gap-2">
+                      <Button
+                        className="primary-button flex items-center gap-2"
+                        onClick={() => {
+                          if (resource.link) {
+                            window.open(resource.link, "_blank")
+                          }
+                        }}
+                      >
                         <Download className="w-4 h-4" />
-                        Get Access
+                        {resource.link ? "Open Calculator" : "Get Access"}
                       </Button>
                     </div>
                   </motion.div>

@@ -84,7 +84,7 @@ export default function FaqSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
+          <Link href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems" target="_blank">
             <Button className="primary-button">
               BOOK AN INTRO CALL
               <span className="ml-2">📅</span>
