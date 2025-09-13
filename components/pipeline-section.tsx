@@ -40,7 +40,7 @@ export default function PipelineSection() {
               Reach out to companies that have urgent hiring needs and are open to external recruiting support
             </p>
             <div className="pt-6">
-              <Link href="https://app.lemcal.com/@zillion-systems/growth-partner" target="_blank">
+              <Link href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems" target="_blank">
                 <Button className="primary-button">
                   LEARN MORE
                   <span className="ml-2">→</span>
