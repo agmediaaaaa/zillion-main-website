@@ -44,7 +44,7 @@ export default function ComparisonSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-[#5538CF] mb-4">CHALLENGES & SOLUTIONS</h2>
+          <h2 className="text-[#DC143C] mb-4">CHALLENGES & SOLUTIONS</h2>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto px-4">
             See how our system addresses the common challenges faced by staffing firms
           </p>
@@ -63,7 +63,7 @@ export default function ComparisonSection() {
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(null)}
                 style={{
-                  backgroundColor: activeIndex === index ? "rgba(85, 56, 207, 0.05)" : "transparent",
+                  backgroundColor: activeIndex === index ? "rgba(220, 20, 60, 0.05)" : "transparent",
                   transform: activeIndex === index ? "scale(1.02)" : "scale(1)",
                 }}
               >
@@ -89,12 +89,12 @@ export default function ComparisonSection() {
                 onMouseEnter={() => setActiveIndex(index + 4)}
                 onMouseLeave={() => setActiveIndex(null)}
                 style={{
-                  backgroundColor: activeIndex === index + 4 ? "rgba(85, 56, 207, 0.05)" : "transparent",
+                  backgroundColor: activeIndex === index + 4 ? "rgba(220, 20, 60, 0.05)" : "transparent",
                   transform: activeIndex === index + 4 ? "scale(1.02)" : "scale(1)",
                 }}
               >
                 <div className="mt-1 flex-shrink-0">
-                  <div className="w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center bg-[#5538CF]">
+                  <div className="w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center bg-[#10B981]">
                     <Check className="w-3 h-3 md:w-4 md:h-4 text-white" />
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function ComparisonSection() {
                 <div key={`before-${index}`} className="text-red-500 font-medium">
                   {stat.before}
                 </div>
-                <div key={`after-${index}`} className="text-[#5538CF] font-medium">
+                <div key={`after-${index}`} className="text-[#DC143C] font-medium">
                   {stat.after}
                 </div>
                 <div key={`improvement-${index}`} className="text-green-600 font-medium">
@@ -154,7 +154,7 @@ export default function ComparisonSection() {
 
                   <div className="flex justify-between items-center border-b border-gray-100 pb-1">
                     <div className="text-xs text-gray-500">After:</div>
-                    <div className="text-[#5538CF] font-medium text-sm">{stat.after}</div>
+                    <div className="text-[#DC143C] font-medium text-sm">{stat.after}</div>
                   </div>
 
                   <div className="flex justify-between items-center">

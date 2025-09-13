@@ -53,7 +53,7 @@ export default function FaqSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-gray-900">
-            Frequently Asked <span className="text-[#5538CF]">Questions</span>
+            Frequently Asked <span className="text-[#DC143C]">Questions</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto px-4">
             Get answers to common questions about our AI-powered cold email system for staffing firms

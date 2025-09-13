@@ -18,7 +18,7 @@ export default function TestimonialsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-[#5538CF] px-4">THIS IS WHAT OUR CLIENTS HAVE TO SAY ABOUT THEIR EXPERIENCE</h2>
+          <h2 className="text-[#DC143C] px-4">THIS IS WHAT OUR CLIENTS HAVE TO SAY ABOUT THEIR EXPERIENCE</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16 px-4">

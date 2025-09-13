@@ -15,7 +15,7 @@ export default function FormulaSection() {
       title: "Book a call",
       description:
         "We talk with you to find out exactly the bottlenecks and limitations in your current sales process.",
-      icon: <PhoneCall className="w-6 h-6 text-[#5538CF]" />,
+      icon: <PhoneCall className="w-6 h-6 text-[#DC143C]" />,
       stats: "15-minute discovery call",
     },
     {
@@ -23,28 +23,28 @@ export default function FormulaSection() {
       title: "Growth Plan",
       description:
         "Our experts will craft a tailored Growth Plan for your staffing firm, optimizing your sales process to achieve maximum results.",
-      icon: <LineChart className="w-6 h-6 text-[#5538CF]" />,
+      icon: <LineChart className="w-6 h-6 text-[#DC143C]" />,
       stats: "48-hour turnaround time",
     },
     {
       number: "03",
       title: "Onboarding",
       description: "We will onboard you and setup the infrastructure within 7-days.",
-      icon: <Rocket className="w-6 h-6 text-[#5538CF]" />,
+      icon: <Rocket className="w-6 h-6 text-[#DC143C]" />,
       stats: "7-day implementation",
     },
     {
       number: "04",
       title: "Review KPI's",
       description: "We will review our KPIs weekly and improve on every possible backend metric.",
-      icon: <BarChart3 className="w-6 h-6 text-[#5538CF]" />,
+      icon: <BarChart3 className="w-6 h-6 text-[#DC143C]" />,
       stats: "Weekly performance reviews",
     },
     {
       number: "05",
       title: "Grow",
       description: "We stay up-to-date on their performance and consistently upgrade our standards.",
-      icon: <TrendingUp className="w-6 h-6 text-[#5538CF]" />,
+      icon: <TrendingUp className="w-6 h-6 text-[#DC143C]" />,
       stats: "Continuous optimization",
     },
   ]
@@ -58,7 +58,7 @@ export default function FormulaSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-[#5538CF]">THE FORMULA</h2>
+          <h2 className="text-[#DC143C]">THE FORMULA</h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto mt-4 px-4">
             Our proven process to help staffing firms generate consistent, high-quality leads
           </p>
@@ -85,7 +85,7 @@ export default function FormulaSection() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-[#5538CF]/10 flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 rounded-full bg-[#DC143C]/10 flex items-center justify-center mr-4">
                     {step.icon}
                   </div>
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">{step.title}</h3>

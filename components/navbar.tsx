@@ -44,7 +44,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <div className="relative h-10 w-48 md:h-12 md:w-64">
-              <Image src="/images/logo-no-background.png" alt="Zillionsystems" fill className="object-contain" />
+              <Image
+                src="/images/logo-no-background.png"
+                alt="Zillionsystems"
+                fill
+                className={`object-contain transition-all duration-300 ${scrolled ? "opacity-0" : "opacity-100"}`}
+              />
             </div>
           </Link>
 
@@ -71,7 +76,9 @@ export default function Navbar() {
         {/* Mobile menu */}
         {isOpen && (
           <motion.div
-            className="md:hidden mt-4 py-4 border-t border-gray-200 bg-white rounded-lg shadow-lg"
+            className={`md:hidden mt-4 py-4 border-t rounded-lg shadow-lg ${
+              scrolled ? "border-gray-600 bg-black" : "border-gray-200 bg-white"
+            }`}
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             transition={{ duration: 0.3 }}

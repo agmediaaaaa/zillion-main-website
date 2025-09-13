@@ -23,7 +23,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <motion.div
-            className="text-xl md:text-2xl font-medium text-[#5538CF] mb-1"
+            className="text-xl md:text-2xl font-medium text-[#DC143C] mb-1"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -36,7 +36,7 @@ export default function HeroSection() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-gray-900 mb-3 text-2xl md:text-4xl lg:text-5xl font-bold"
           >
-            Get <span className="text-[#5538CF]">3-5 job</span> orders <span>a month using</span>{" "}
+            Get <span className="text-[#DC143C]">3-5 job</span> orders <span>a month using</span>{" "}
             <span>AI based cold emails</span>
           </motion.h1>
         </motion.div>

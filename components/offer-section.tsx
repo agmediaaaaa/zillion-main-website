@@ -19,7 +19,7 @@ export default function OfferSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-[#5538CF]">
+          <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-[#DC143C]">
             <Award className="w-8 h-8 text-white" />
           </div>
 

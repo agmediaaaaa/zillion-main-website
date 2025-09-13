@@ -30,7 +30,7 @@ export default function BenefitsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-[#5538CF]">YOU'D GET</h2>
+          <h2 className="text-[#DC143C]">YOU'D GET</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 px-4">
@@ -43,7 +43,7 @@ export default function BenefitsSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <div className="flex-shrink-0">
-                <div className="w-6 h-6 rounded-full flex items-center justify-center bg-[#5538CF]">
+                <div className="w-6 h-6 rounded-full flex items-center justify-center bg-[#10B981]">
                   <Check className="w-4 h-4 text-white" />
                 </div>
               </div>

@@ -85,7 +85,7 @@ export default function CaseStudiesSlider() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-gray-900">
-            Client <span className="text-[#5538CF]">Case Studies</span>
+            Client <span className="text-[#DC143C]">Case Studies</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Real results from our AI-powered cold email system for staffing firms
@@ -108,7 +108,7 @@ export default function CaseStudiesSlider() {
                       />
                     </div>
                     <div className="case-study-content">
-                      <h3 className="text-[#5538CF] mb-2">{study.title}</h3>
+                      <h3 className="text-[#DC143C] mb-2">{study.title}</h3>
                       <p className="text-gray-700">{study.description}</p>
                     </div>
                   </>
@@ -126,7 +126,7 @@ export default function CaseStudiesSlider() {
                       </div>
                     </div>
                     <div className="case-study-content">
-                      <h3 className="text-[#5538CF] mb-2">{study.title}</h3>
+                      <h3 className="text-[#DC143C] mb-2">{study.title}</h3>
                       <p className="text-gray-700">{study.description}</p>
                     </div>
                   </>
@@ -149,7 +149,7 @@ export default function CaseStudiesSlider() {
                       />
                     </div>
                     <div className="case-study-content">
-                      <h3 className="text-[#5538CF] mb-2">{study.title}</h3>
+                      <h3 className="text-[#DC143C] mb-2">{study.title}</h3>
                       <p className="text-gray-700">{study.description}</p>
                     </div>
                   </>
@@ -167,7 +167,7 @@ export default function CaseStudiesSlider() {
                       </div>
                     </div>
                     <div className="case-study-content">
-                      <h3 className="text-[#5538CF] mb-2">{study.title}</h3>
+                      <h3 className="text-[#DC143C] mb-2">{study.title}</h3>
                       <p className="text-gray-700">{study.description}</p>
                     </div>
                   </>
