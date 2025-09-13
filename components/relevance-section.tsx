@@ -145,14 +145,14 @@ export default function RelevanceSection() {
 
         {/* Mobile Carousel View */}
         {isMobile && (
-          <div className="md:hidden px-4">
-            <div className="relative max-w-full">
-              <div className="carousel-container overflow-hidden rounded-xl mx-4">
+          <div className="md:hidden">
+            <div className="relative max-w-full flex justify-center">
+              <div className="carousel-container overflow-hidden rounded-xl max-w-sm w-full mx-auto">
                 <div className="relative min-h-[450px] flex items-center justify-center p-6">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={activeIndex}
-                      className="card hover-card text-center w-full max-w-sm mx-auto"
+                      className="card hover-card text-center w-full"
                       initial={{ opacity: 0, x: 100 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -100 }}
@@ -168,16 +168,16 @@ export default function RelevanceSection() {
                 </div>
               </div>
 
-              {/* Navigation buttons - positioned relative to the outer container */}
+              {/* Navigation buttons - positioned relative to the centered container */}
               <button
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 border border-[#E6E6C7]"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 border border-[#E6E6C7]"
                 onClick={prevSlide}
                 aria-label="Previous slide"
               >
                 <ChevronLeft className="w-6 h-6 text-gray-700" />
               </button>
               <button
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 border border-[#E6E6C7]"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 border border-[#E6E6C7]"
                 onClick={nextSlide}
                 aria-label="Next slide"
               >

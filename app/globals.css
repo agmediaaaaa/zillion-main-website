@@ -126,6 +126,35 @@ body {
   transition: opacity 0.3s ease;
 }
 
+/* Beige glass box styling */
+.beige-glass-box {
+  background: linear-gradient(135deg, var(--theme-beige) 0%, rgba(245, 245, 220, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(139, 69, 19, 0.12), 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(139, 69, 19, 0.15);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.beige-glass-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--theme-red) 0%, var(--theme-red-light) 100%);
+  border-radius: 1rem 1rem 0 0;
+  opacity: 0.7;
+}
+
+.beige-glass-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(139, 69, 19, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-color: rgba(220, 20, 60, 0.2);
+}
+
 @media (min-width: 768px) {
   .card {
     padding: 2rem;

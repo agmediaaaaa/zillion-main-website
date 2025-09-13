@@ -33,7 +33,7 @@ export default function PipelineSection() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-bold">
-              Our system can fill ANY recruitment companies pipeline <span className="text-[#5538CF]">in 30 days</span>{" "}
+              Our system can fill ANY recruitment companies pipeline <span className="text-[#DC143C]">in 30 days</span>{" "}
               or less
             </h2>
             <p className="text-xl text-gray-700">
