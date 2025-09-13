@@ -42,8 +42,9 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <div className="relative h-10 w-48 md:h-12 md:w-64">
+          {/* Logo */}
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <div className="relative h-10 w-32 md:h-12 md:w-48">
               <Image
                 src="/images/logo-no-background.png"
                 alt="Zillionsystems"
@@ -53,27 +54,45 @@ export default function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Always visible */}
+          <nav className="hidden lg:flex items-center space-x-6">
             <Link href="#about" className="nav-link">
               About Us
             </Link>
             <Link href="#case-studies" className="nav-link">
               Case Studies
             </Link>
-            <button onClick={toggleResourcesModal} className="nav-link">
-              Free Resources
+            <button onClick={toggleResourcesModal} className="nav-link whitespace-nowrap">
+              ROI Calculator
             </button>
             <Link href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems" target="_blank">
               <Button className="primary-button">Book a Call</Button>
             </Link>
           </nav>
 
+          {/* Tablet Navigation - Horizontal but smaller */}
+          <nav className="hidden md:flex lg:hidden items-center space-x-4">
+            <Link href="#about" className="nav-link text-sm">
+              About Us
+            </Link>
+            <Link href="#case-studies" className="nav-link text-sm">
+              Case Studies
+            </Link>
+            <button onClick={toggleResourcesModal} className="nav-link text-sm whitespace-nowrap">
+              ROI Calculator
+            </button>
+            <Link href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems" target="_blank">
+              <Button className="primary-button text-sm px-3 py-2">Book Call</Button>
+            </Link>
+          </nav>
+
+          {/* Mobile Menu Button - Only for small screens */}
           <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile menu - Only shows on small screens when toggled */}
         {isOpen && (
           <motion.div
             className={`md:hidden mt-4 py-4 border-t rounded-lg shadow-lg ${
@@ -97,7 +116,7 @@ export default function Navbar() {
                 }}
                 className="text-left nav-link"
               >
-                Free Resources
+                ROI Calculator
               </button>
               <Link
                 href="https://zillionsystems.fillout.com/intro-call-with-zillion-systems"
